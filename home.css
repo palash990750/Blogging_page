@@ -1,0 +1,241 @@
+/* .outer-box {
+    width: 1ooopx;
+    text-align: center;
+}
+
+.outer-box1 {
+    margin-left: 300px;
+    text-align: center;
+    display: flex;
+
+}
+
+.box {
+    
+    display: flex;
+    font-size: 50px;
+    padding: 20px 0;
+    color: white;
+}
+h1{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+}
+
+.box1 {
+    text-align: center;
+    display: flex;
+    margin-left: 470px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.box2 {
+    text-align: center;
+    display: flex;
+    margin-left: 550px;
+    padding: 15px;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+}
+
+.box3 {
+    text-align: center;
+     display: flex;
+    padding: 15px;
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+}
+
+.vs-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.link {
+    text-align: center;
+    display: flex;
+    margin-left: 500px;
+    font-size: 15px;
+}
+
+.page-color {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+
+    background-color: black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.03s, color0.03s;
+} */
+
+.head {
+    display: flex;
+    color: white;
+}
+
+:root {
+    --background-light: #ffffff;
+    --background-dark: #121212;
+    --text-light: #000000;
+    --text-dark: #ffffff;
+}
+
+.light-mode {
+    background-color: var(--background-light);
+    color: var(--text-light);
+}
+
+.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+/*reStyling*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Ubuntu", serif;
+    background-color: #121212;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.main-content h1 {
+    color: white;
+    padding: 20px;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logo {
+    width: 40px;
+    aspect-ratio: 1/1;
+    filter: invert(100%) brightness(200%);
+}
+
+.head-first {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.head-button {
+    border-radius: 50%;
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    padding: 5px;
+
+    &:hover {
+        background-color: rgb(144, 146, 145);
+        transform: scale(1.2);
+    }
+
+    &:active {
+        background-color: white;
+        transform: scale(1.1);
+
+    }
+}
+
+.head-second,
+.head-third {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+.image-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.front-image {
+    width: 95%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.post-div {
+    width: 90%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.post-div button {
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: blueviolet;
+    color: white;
+    box-shadow: 0px 2px 5px rgb(37, 34, 221);
+
+    &:hover {
+        background-color: rgb(85, 82, 230);
+        transform: scale(1.2);
+        box-shadow: 0px 2px 5px rgb(82, 80, 196);
+
+    }
+
+    &:active {
+        background-color: rgb(87, 27, 143);
+        transform: scale(1.1);
+
+    }
+}
+footer{
+    height: 50px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    
+}
+footer h4{
+    font-weight: 200;
+}

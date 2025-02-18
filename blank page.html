@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Writing Page</title>
+    <link rel="stylesheet" href="blank page.css">
+
+</head>
+<body class="body">
+
+<div class="container">
+    <h1 class="head">Writing Page</h1>
+    <textarea id="content" placeholder="Start writing here..."></textarea>
+    <button onclick="saveContent()">Save</button>
+</div>
+
+<script>
+    function saveContent() {
+        const content = document.getElementById('content').value;
+        if (content.trim() === "") {
+            alert("Please write something before saving.");
+        } else {
+            localStorage.setItem('writingContent', content);
+            alert("Content saved!");
+        }
+    }
+</script>
+
+</body>
+</html>

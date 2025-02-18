@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="new page.css">
+</head>
+<body class="body">
+    <div class="outer-box">
+        <h1 class="box">Login</h1>
+        <hr>
+        
+        <!-- Using form elements for input -->
+        <form action="login-process.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            
+            <div class="forgot-password">
+                <a href="./Forget-password.html">Forgot password?</a>
+            </div>
+            <div class="creat-account">
+            <a href="./account-creat-page.html">Create Account</a>
+            </div>
+            <br>
+            <button type="submit" class="login-button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
